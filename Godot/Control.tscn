@@ -1,0 +1,55 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Control.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1.0
+margin_right = -1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="input_Registration_Login" type="TextEdit" parent="."]
+margin_left = 26.0
+margin_top = 38.0
+margin_right = 278.0
+margin_bottom = 73.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="input_Registration_Password" type="TextEdit" parent="."]
+margin_left = 26.0
+margin_top = 109.0
+margin_right = 278.0
+margin_bottom = 144.0
+
+[node name="Login_Label" type="Label" parent="."]
+margin_left = 20.0
+margin_top = 12.0
+margin_right = 150.0
+margin_bottom = 30.0
+text = "Login:"
+
+[node name="Password_Label" type="Label" parent="."]
+margin_left = 20.0
+margin_top = 86.0
+margin_right = 156.0
+margin_bottom = 104.0
+text = "Password:"
+
+[node name="Send" type="Button" parent="."]
+margin_left = 26.0
+margin_top = 164.0
+margin_right = 274.0
+margin_bottom = 192.0
+text = "Send"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+[connection signal="pressed" from="Send" to="." method="_on_Send_pressed"]

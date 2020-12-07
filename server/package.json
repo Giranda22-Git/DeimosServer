@@ -1,0 +1,29 @@
+{
+  "name": "deimos-server",
+  "version": "1.0.0",
+  "description": "server for step on step game Deimos",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Giranda22-Git/DeimosServer.git"
+  },
+  "author": "Giranda22",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Giranda22-Git/DeimosServer/issues"
+  },
+  "homepage": "https://github.com/Giranda22-Git/DeimosServer#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.4",
+    "ws": "^7.4.1"
+  }
+}
